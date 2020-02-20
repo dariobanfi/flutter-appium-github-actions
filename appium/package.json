@@ -1,0 +1,38 @@
+{
+  "name": "javascript-wd",
+  "version": "1.0.0",
+  "description": "Appium sample code using 'wd'",
+  "scripts": {
+    "test": "mocha --require @babel/register test/**/*.test.js",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
+  },
+  "author": "Dario Banfi",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=6"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^7.0.1",
+    "wd": "^1.5.0"
+  },
+  "mocha": {
+    "timeout": 1800000
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "6"
+          }
+        }
+      ]
+    ]
+  }
+}
