@@ -22,4 +22,18 @@ TIP: Don't get lazy and make sure to have all the "optional" dependencies listed
 
 The iOS build will probably fail because you need to generate the certificates / login with your developer id -> follow the handy instructions that your command line will spit out to do that.
 
+### Test locally using Appium
 
+`cd appium && npm i`
+
+Now, before testing, make sure that you have the correct config for your iOS simulator and Android Emulator inside `appium/helpers/config.js`
+
+Open the Android emulator (somehow Appium doesn't do it automatically)
+
+Run: `npm test`
+
+Hopefully it's all green!
+
+## GitHub actions
+
+// in progress
